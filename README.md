@@ -6,6 +6,8 @@
 
 A Flutter widget for rendering HTML and CSS as Flutter widgets.
 
+Forked from https://github.com/Sub6Resources/flutter_html (3.0.0-beta.2). The only change is disabling the lookbehind regex under the _removeUnnecessaryWhitespace function in /lib/src/processing/whitespace.dart, as a workaround for the issue identified on https://github.com/Sub6Resources/flutter_html/issues/1371.
+
 ```dart
 Widget build(context) {
   return Html(
